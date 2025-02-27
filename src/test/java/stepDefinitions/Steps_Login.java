@@ -29,4 +29,9 @@ public class Steps_Login {
         loginPage.enterUsername(username);
         loginPage.enterPassword(password);
     }
+
+    @And("the error message is displayed")
+    public void theErrorMessageIsDisplayed() {
+        loginPage.isErrorMessageDisplayed();
+    }
 }
